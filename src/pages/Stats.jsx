@@ -40,7 +40,7 @@ const Stats = () => {
         queryKey: ["stats"],
         queryFn: () =>
             getAllHandler(
-                `http://localhost:3000/api/v1/admin/stats`
+                `https://job-hai-client.vercel.app/api/v1/admin/stats`
             ),
     });
 
