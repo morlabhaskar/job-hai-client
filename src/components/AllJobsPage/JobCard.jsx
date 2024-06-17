@@ -36,7 +36,7 @@ const JobCard = ({ job }) => {
         };
         try {
             const response = await postHandler({
-                url: "https://job-hai-client.vercel.app/api/v1/application/apply",
+                url: "https://job-hai-server.vercel.app/api/v1/application/apply",
                 body: appliedJob,
             });
             Swal.fire({

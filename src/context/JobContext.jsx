@@ -25,7 +25,7 @@ const JobContext = ({ children }) => {
 
     useEffect(() => {
         handleJobFetch(
-            `https://job-hai-client.vercel.app/api/v1/jobs?page=1`
+            `https://job-hai-server.vercel.app/api/v1/jobs?page=1`
         );
     }, []);
     const passing = {

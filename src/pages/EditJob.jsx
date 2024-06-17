@@ -35,7 +35,7 @@ const EditJob = () => {
         queryKey: ["updateJob"],
         queryFn: () =>
             getSingleHandler(
-                `https://job-hai-client.vercel.app/api/v1/jobs/${id}`
+                `https://job-hai-server.vercel.app/api/v1/jobs/${id}`
             ),
     });
 
@@ -98,7 +98,7 @@ const EditJob = () => {
         // posting;
         updateJobMutation.mutate({
             body: updateJob,
-            url: `https://job-hai-client.vercel.app/api/v1/jobs/${id}`,
+            url: `https://job-hai-server.vercel.app/api/v1/jobs/${id}`,
         });
     };
     // const onSubmit = (data) => {

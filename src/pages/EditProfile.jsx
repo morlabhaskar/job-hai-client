@@ -29,7 +29,7 @@ const EditProfile = () => {
     //     queryKey: ["profile"],
     //     queryFn: async () => {
     //         const response = await axios.get(
-    //             `https://job-hai-client.vercel.app/api/v1/users/${id}`
+    //             `https://job-hai-server.vercel.app/api/v1/users/${id}`
     //         );
     //         return response.data;
     //     },
@@ -60,7 +60,7 @@ const EditProfile = () => {
             }
 
             const response = await axios.patch(
-                `https://job-hai-client.vercel.app/api/v1/users`,
+                `https://job-hai-server.vercel.app/api/v1/users`,
                 updateUser,
                 {
                     withCredentials: true,

@@ -9,7 +9,7 @@ const Admin = () => {
         queryKey: ["admin_info"],
         queryFn: () =>
             getAllHandler(
-                `https://job-hai-client.vercel.app/api/v1/admin/info`
+                `https://job-hai-server.vercel.app/api/v1/admin/info`
             ),
     });
 

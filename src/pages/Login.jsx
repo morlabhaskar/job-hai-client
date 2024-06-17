@@ -31,7 +31,7 @@ const Login = () => {
         // posting
         try {
             const response = await axios.post(
-                "https://job-hai-client.vercel.app/api/v1/auth/login",
+                "https://job-hai-server.vercel.app/api/v1/auth/login",
                 data,
                 {
                     withCredentials: true,

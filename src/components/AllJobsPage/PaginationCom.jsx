@@ -14,7 +14,7 @@ const PaginationCom = () => {
         // );
         // setItemOffset(newOffset);
         handleJobFetch(
-            `https://job-hai-client.vercel.app/api/v1/jobs?page=${
+            `https://job-hai-server.vercel.app/api/v1/jobs?page=${
                 e.selected + 1
             }&limit=5`
         );
