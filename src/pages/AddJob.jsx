@@ -85,14 +85,14 @@ const AddJob = () => {
 
     return (
         <Wrapper>
-            <div className="">
+            <div className=" ">
                 <div className="title-row">
                     Create Job
                     <CiSquarePlus className="ml-1 text-xl md:text-2xl" />
                 </div>
                 <div className="content-row">
                     <form autoComplete="off" onSubmit={handleSubmit(onSubmit)}>
-                        <div className="form">
+                        <div className="form flex flex-col  ml-3 ">
                             {/* Position */}
                             <div className="row">
                                 <label htmlFor="position">Position</label>
@@ -363,8 +363,8 @@ const AddJob = () => {
                         </div>
 
                         {/* Tag inputs */}
-                        <div className="flex flex-col  min-[600px]:flex-row  justify-between items-center gap-4 mt-5">
-                            <div className="row gap-y-2">
+                        <div className="flex flex-col mt-5">
+                            <div className=" gap-y-2">
                                 <label htmlFor="position">
                                     Required Skills
                                 </label>
@@ -381,7 +381,7 @@ const AddJob = () => {
                                     }}
                                 />
                             </div>
-                            <div className="row gap-y-2">
+                            <div className="gap-y-2">
                                 <label htmlFor="position">Job Facilities</label>
                                 <TagsInput
                                     value={facilities}
@@ -399,7 +399,7 @@ const AddJob = () => {
                         </div>
 
                         {/* Description */}
-                        <div className="row  mt-5">
+                        <div className="row ml-1 mt-5">
                             <label htmlFor="description">Job Description</label>
                             <textarea
                                 type="text"
@@ -429,7 +429,7 @@ const AddJob = () => {
                             )}
                         </div>
 
-                        <div className="row mt-4 sm:mt-0">
+                        <div className="row mt-4 ml-1 sm:mt-0">
                             <label htmlFor="" className="invisible">
                                 delete
                             </label>
@@ -495,7 +495,7 @@ const Wrapper = styled.section`
         flex-direction: column;
         width: 100%;
     }
-    .row label {
+        label {
         font-size: 11.3px;
         font-weight: 600;
         letter-spacing: 1px;
