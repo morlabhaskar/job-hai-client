@@ -33,9 +33,6 @@ const Landing = () => {
             {/* <Navbar navbarRef={navbarRef} /> */}
             <Navbar />
             {/* <Wrapper ref={heroRef} > */}
-          
-            
-            
             <div>
                 <Hero/>
                 <Brands />

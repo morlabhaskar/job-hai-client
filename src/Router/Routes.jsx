@@ -16,9 +16,7 @@ import {
     AddJob,
     ManageJobs,
     Job,
-    MyJobs,
-    EditProfile,
-    ManageUsers,
+    MyJobs, EditProfile, ManageUsers,
 } from "../pages";
 
 import { JobContext } from "../context/JobContext";
