@@ -104,38 +104,6 @@ const Applicant = () => {
     return (
         <Wrapper>
             <div className="content-row">
-                {/* <table className="table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Job Position</th>
-                            <th>Company</th>
-                            <th>Status</th>
-                            
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {jobs?.map((job, index) => {
-                            let i =
-                                index + 1 < 10 ? `0${index + 1}` : index + 1;
-                            return (
-                                <tr key={jobs?.jobId?._id}>
-                                    <td>{i}</td>
-                                    <td>{job?.jobId?.position}</td>
-                                    <td>{job?.jobId?.company}</td>
-                                    <td className="action-row">
-                                        {job?.status}
-                                        {job?.status == 'accepted' ? <TbAwardFilled className="text-green-600 text-xl" />
-                                            : job?.status == 'pending' ? <TbAlertCircleFilled className="text-yellow-500 text-xl" /> : <TbAlertTriangleFilled className="text-red-600 text-xl" />}
-                                        
-                                        
-                                    </td>
-                                </tr>
-                            );
-                        })}
-                    </tbody>
-                </table> */}
-                {/* antd scroll table */}
                 <Paper className="paper">
                     <TableContainer sx={{ maxHeight: 440 }}>
                         <Table stickyHeader aria-label="sticky table">
@@ -165,13 +133,6 @@ const Applicant = () => {
                                         {job?.status == 'accepted' ? <TbAwardFilled className="text-green-600 text-xl" />
                                             : job?.status == 'pending' ? <TbAlertCircleFilled className="text-yellow-500 text-xl" /> : <TbAlertTriangleFilled className="text-red-600 text-xl" />}
                                         
-                                        {/* (condition1) ? (statement3) : (condition2) ? (statement1) : (statement2) */}
-                                        {/* <button
-                                            className="action delete"
-                                            onClick={() => deleteModal(job._id)}
-                                        >
-                                            <MdDelete />
-                                        </button> */}
                                     </td>
                                 </tr>
                             );
@@ -212,7 +173,7 @@ const Wrapper = styled.section`
 }
 @media screen and (min-device-width: 376px) and (max-device-width: 425px) { 
 .paper {
-        width:25rem
+        width:24rem
     }
 
 }

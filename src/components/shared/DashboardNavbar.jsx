@@ -65,10 +65,13 @@ const DashboardNavbar = () => {
                     <Logo />
                 </div>
                 <div className="end">
-                    <Button type="primary" className="button-85" role="button" onClick={showModal}>
+                    <Button type="primary" className="button-85 big-btn" role="button" onClick={showModal}>
                         <h2 className="flex"><FiLogOut className="text-lg mr-1 text-red-500" /> <span className='text-red-500'> Logout</span></h2>
                     </Button>
-                    <Modal className='text-slate-900' title="Delete !" okText={<p className="text-black">Logout</p>}
+                    <Button type="primary" className="button-85 small-btn hidden" role="button" onClick={showModal}>
+                        <h2 className="flex"><FiLogOut className="logout-icon text-lg text-red-500" /> </h2>
+                    </Button>
+                    <Modal className='text-slate-900' title="Logout !" okText={<p className="text-black">Logout</p>}
                         cancelText={<p>Cancel</p>} open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
                         <p>Are You Sure Want to logout...</p>
                     </Modal>
@@ -86,7 +89,23 @@ const Wrapper = styled.nav`
     box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
     padding: 1rem calc(1rem + 0.7vw);
     background-color: var(--color-white);
-    z-index: 1;
+    z-index: 10;
+
+    @media screen and (min-device-width: 0px) and (max-device-width: 425px) { 
+        .big-btn {
+            display:none
+        }
+        .small-btn {
+            display:block
+        }
+        .logout-icon {
+            padding-bottom:2px
+        }
+        .small {
+            margin-top:-13px;
+        }
+
+    }
 
     .nav-container {
         width: 100%;
@@ -180,7 +199,7 @@ const Wrapper = styled.nav`
         }
 
     .button-85 {
-  padding: 0.6em 2em;
+  padding: 0.6em 1em;
   border: none;
   outline: none;
   color: red;

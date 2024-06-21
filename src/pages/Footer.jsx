@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div>
             <Wrapper>
-                <div className="new_footer_area bg_color">
+                <div className="new_footer_area bg_color bg-slate-200">
                     <div className="new_footer_top">
                         <div className="container">
                             <div className="row">
@@ -73,8 +73,14 @@ const Footer = () => {
     )
 }
 const Wrapper = styled.section`
+@media screen and (min-device-width: 376px) and (max-device-width: 425px) { 
+        .row {
+            margin-left:1rem;
+        }
+    }
 .new_footer_area {
-    background: #fbfbfd;
+    // background: #fbfbfd;
+    // background: red;
 }
 
 

@@ -162,51 +162,6 @@ const ManageJobs = () => {
                 <CiSquarePlus className="ml-1 text-xl md:text-2xl" />
             </div>
             <div className="content-row">
-                {/* <table className="table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Job Position</th>
-                            <th>Company</th>
-                            <th>Created By</th>
-                            <th>actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {jobs?.result?.map((job, index) => {
-                            let i =
-                                index + 1 < 10 ? `0${index + 1}` : index + 1;
-                            return (
-                                <tr key={job._id}>
-                                    <td>{i}</td>
-                                    <td>{job?.position}</td>
-                                    <td>{job?.company}</td>
-                                    <td>{job?.createdBy?.username}</td>
-                                    <td className="action-row">
-                                        <Link
-                                            to={`/job/${job._id}`}
-                                            className="action view"
-                                        >
-                                            <MdVisibility />
-                                        </Link>
-                                        <Link
-                                            to={`/dashboard/edit-job/${job._id}`}
-                                            className="action edit"
-                                        >
-                                            <FaRegEdit />
-                                        </Link>
-                                        <button
-                                            className="action delete"
-                                            onClick={() => deleteModal(job._id)}
-                                        >
-                                            <MdDelete />
-                                        </button>
-                                    </td>
-                                </tr>
-                            );
-                        })}
-                    </tbody>
-                </table> */}
                 {/* antd scroll table */}
                 <Paper className="paper">
                     <TableContainer sx={{ maxHeight: 440 }}>
@@ -291,7 +246,7 @@ const Wrapper = styled.section`
     }
     @media screen and (min-device-width: 376px) and (max-device-width: 425px) { 
     .paper {
-            width:25rem
+            width:24rem
         }
     
     }

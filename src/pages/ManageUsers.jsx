@@ -155,79 +155,6 @@ const ManageUsers = () => {
                 <CiSquarePlus className="ml-1 text-xl md:text-2xl" />
             </div>
             <div className="content-row">
-                {/* <table className="table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Username</th>
-                            <th>Email</th>
-                            <th>Role</th>
-                            <th>actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {users?.result?.map((user, index) => {
-                            let i =
-                                index + 1 < 10 ? `0${index + 1}` : index + 1;
-                            return (
-                                <tr key={user._id}>
-                                    <td>{i}</td>
-                                    <td>{user?.username}</td>
-                                    <td>{user?.email}</td>
-                                    <td>{user?.role}</td>
-                                    <td className="action-row">
-                                        {user?._id === me._id ? <FcBusinessman className="text-2xl ml-4" /> : (
-                                            <>
-                                                {" "}
-                                                {user?.role === "admin" ? null : (
-                                                    <button
-                                                        className="action admin"
-                                                        onClick={() =>
-                                                            updateUserModal(
-                                                                user._id,
-                                                                "admin"
-                                                            )
-                                                        }
-                                                    >
-                                                        admin
-                                                    </button>
-                                                )}
-                                                {user?.role ===
-                                                    "recruiter" ? null : (
-                                                    <button
-                                                        className="action recruiter"
-                                                        onClick={() =>
-                                                            updateUserModal(
-                                                                user._id,
-                                                                "recruiter"
-                                                            )
-                                                        }
-                                                    >
-                                                        recuiter
-                                                    </button>
-                                                )}
-                                                {user?.role ===
-                                                    "user" ? null : (
-                                                    <button
-                                                        className="action user"
-                                                        onClick={() =>
-                                                            updateUserModal(
-                                                                user._id,
-                                                                "user"
-                                                            )
-                                                        }
-                                                    >
-                                                        user
-                                                    </button>
-                                                )}
-                                            </>
-                                        )}
-                                    </td>
-                                </tr>
-                            );
-                        })}
-                    </tbody>
-                </table> */}
 
                 {/* antd scroll table */}
                 <Paper className="paper">
@@ -343,7 +270,7 @@ const Wrapper = styled.section`
 }
 @media screen and (min-device-width: 376px) and (max-device-width: 425px) { 
 .paper {
-        width:25rem
+        width:24rem
     }
 
 }
@@ -353,11 +280,6 @@ const Wrapper = styled.section`
     }
 
 }
-    
-    
-
-
-
     .title-row {
         display: flex;
         justify-content: flex-start;

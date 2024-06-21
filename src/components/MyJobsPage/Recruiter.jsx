@@ -160,97 +160,6 @@ const Recruiter = () => {
     return (
         <Wrapper>
             <div className="content-row">
-                {/* <table className="table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Job Position</th>
-                            <th>Company</th>
-                            <th>Status</th>
-                            <th>actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {jobs?.map((job, index) => {
-                            let i =
-                                index + 1 < 10 ? `0${index + 1}` : index + 1;
-                            return (
-                                <tr key={job?._id}>
-                                    <td>{i}</td>
-                                    <td>{job?.jobId?.position}</td>
-                                    <td>{job?.jobId?.company}</td>
-                                    <td>{job?.status}</td>
-                                    <td className="action-row">
-                                        <button
-                                            className="action resume"
-                                            onClick={() =>
-                                                handleResumeView(job.resume)
-                                            }
-                                        >
-                                            resume
-                                        </button>
-
-                                        {job?.status === "pending" && (
-                                            <>
-                                                {" "}
-                                                <button
-                                                    className="action accept"
-                                                    onClick={() =>
-                                                        handleAcceptStatus(
-                                                            job._id,
-                                                            job?.recruiterId
-                                                        )
-                                                    }
-                                                >
-                                                    accept
-                                                </button>
-                                                <button
-                                                    className="action reject"
-                                                    onClick={() =>
-                                                        handleRejectStatus(
-                                                            job._id,
-                                                            job?.recruiterId
-                                                        )
-                                                    }
-                                                >
-                                                    Reject
-                                                </button>
-                                            </>
-                                        )}
-
-                                        {job?.status === "accepted" && (
-                                            <button
-                                                className="action reject"
-                                                onClick={() =>
-                                                    handleRejectStatus(
-                                                        job._id,
-                                                        job?.recruiterId
-                                                    )
-                                                }
-                                            >
-                                                Reject
-                                            </button>
-                                        )}
-
-                                        {job?.status === "rejected" && (
-                                            <button
-                                                className="action accept"
-                                                onClick={() =>
-                                                    handleAcceptStatus(
-                                                        job._id,
-                                                        job?.recruiterId
-                                                    )
-                                                }
-                                            >
-                                                accept
-                                            </button>
-                                        )}
-                                    </td>
-                                </tr>
-                            );
-                        })}
-                    </tbody>
-                </table> */}
 
                 {/* antd scroll table */}
                 <Paper className="paper">
@@ -382,7 +291,7 @@ const Wrapper = styled.section`
 }
 @media screen and (min-device-width: 376px) and (max-device-width: 425px) { 
 .paper {
-        width:25rem
+        width:24rem
     }
 
 }

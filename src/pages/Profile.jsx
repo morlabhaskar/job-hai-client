@@ -1,5 +1,5 @@
 import React from "react";
-import {MailOutlined,EnvironmentOutlined} from '@ant-design/icons';
+import { MailOutlined, EnvironmentOutlined } from '@ant-design/icons';
 
 import { Link } from "react-router-dom";
 
@@ -22,95 +22,34 @@ const Profile = () => {
 
     return (
         <Wrapper>
-            {/* <div className="wrapper">
-                <h5 className="title">Informations</h5>
-                <div className="profile-container">
-                    <div className="first-col">
-                        <img src={avatar} alt="avatar" className="avatar" />
-                        <div className=" flex flex-col justify-center items-center mt-6">
-                            <Link
-                                to={`/dashboard/edit-profile/${user?._id}}`}
-                                className="flex items-center"
-                            >
-                                <FiEdit />
-                                <span className="text-xs capitalize ml-1 font-medium ">
-                                    edit
-                                </span>
-                            </Link>
-                            {/* <Link to="" className="flex items-center mt-3">
-                                <GrPowerReset />
-                                <span className="text-xs capitalize ml-1 font-medium ">
-                                    Reset Password
-                                </span>
-                            </Link> */}
-            {/* </div>
-                    </div>
-                    <table className="information-table">
-                        <tbody>
-                            <tr className="row">
-                                <td className="info">Username :</td>
-                                <td className="value">{user?.username}</td>
-                            </tr>
-                            <tr className="row">
-                                <td className="info">Role :</td>
-                                <td className="value">{user?.role}</td>
-                            </tr>
-                            <tr className="row">
-                                <td className="info">email :</td>
-                                <td className="value email">{user?.email}</td>
-                            </tr>
-                            <tr className="row">
-                                <td className="info">Join :</td>
-                                <td className="value">{date}</td>
-                            </tr>
-                            <tr className="row">
-                                <td className="info">Location :</td>
-                                <td className="value">
-                                    {user?.location || "not available"}
-                                </td>
-                            </tr>
-                            <tr className="row">
-                                <td className="info">Gender :</td>
-                                <td className="value">Male</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <p className="resume text-justify">
-                    <span className="info">resume</span>
-                    <span className="value overflow-hidden">
-                        {user?.resume}
-                    </span>
-                </p>
-            </div> */}
 
 
-            <section class="text-gray-600 body-font">
-                <div class="container mx-auto flex md:px-60 py-10 md:flex-row flex-col items-center rounded-xl border-solid border-2 border-sky-500">
-                    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:pr-40 lg:pr-40 md:mb-0">
-                        <img class="object-cover object-center rounded" alt="hero" src={avatar} />
-                        <div class="flex justify-center mt-3">
+            <section className="text-gray-600 body-font">
+                <div className="container mx-auto flex md:px-60 py-10 md:flex-row flex-col items-center rounded-xl border-solid border-2 border-sky-500">
+                    <div className="lg:max-w-lg  lg:w-full md:w-1/2 w-5/6 mb-10 md:pr-40 lg:pr-40 md:mb-0">
+                        <img className="img object-cover object-center rounded" alt="hero" src={avatar} />
+                        <div className="flex justify-center mt-3">
                             <Link
                                 to={`/dashboard/edit-profile/${user?._id}}`}
                                 className="flex items-center"
                             >
 
-                                <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg flex items-center"><FiEdit className="mr-2" /> Edit</button>
+                                <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg flex items-center"><FiEdit className="mr-2" /> Edit</button>
                             </Link>
 
                         </div>
                     </div>
-                    <div class="lg:flex-grow w-full  md:px-2 flex flex-col flex justify-center">
+                    <div className="lg:flex-grow w-full  md:px-2 flex flex-col flex justify-center">
                         <div className="className flex flex-col items-center border-solid border-2 border-sky-800 mb-3 rounded-xl">
-                            <h1 class="title-font sm:text-4xl text-3xl font-medium mb-1 text-gray-900 flex items-center text-indigo-500">{user?.username}</h1>
-                            <p class="mb-1 leading-relaxed"><MailOutlined className="text-blue-400"  /> {user?.email}</p>
-                            <p class=" leading-relaxed"> <EnvironmentOutlined className="text-blue-400" /> {user?.location || "Not Available"}</p>
+                            <h1 className="title-font sm:text-4xl text-3xl font-medium mb-1 text-gray-900 flex items-center text-indigo-500">{user?.username}</h1>
+                            <p className="mb-1 leading-relaxed"><MailOutlined className="text-blue-400" /> {user?.email}</p>
+                            <p className=" leading-relaxed"> <EnvironmentOutlined className="text-blue-400" /> {user?.location || "Not Available"}</p>
 
                         </div>
 
-                        <p class="mb-8 leading-relaxed"><span className="mr-2 text-fuchsia-500">Joining : </span>{date}</p>
-                        <p class="mb-8 leading-relaxed"><span className="mr-2 text-fuchsia-500">Gender : </span>{user?.gender || "Not Available"}</p>
-                        <p class="mb-8 leading-relaxed"><span className="mr-2 text-fuchsia-500">Resume : </span>{user?.resume || "Not Available"}</p>
+                        <p className="mb-8 leading-relaxed"><span className="mr-2 text-fuchsia-500">Joining : </span>{date}</p>
+                        <p className="mb-8 leading-relaxed"><span className="mr-2 text-fuchsia-500">Gender : </span>{user?.gender || "Not Available"}</p>
+                        <p className="mb-8 leading-relaxed"><span className="mr-2 text-fuchsia-500">Resume : </span>{user?.resume || "Not Available"}</p>
 
                     </div>
                 </div>
@@ -129,7 +68,14 @@ const Wrapper = styled.section`
     align-items: center;
     justify-content: center;
     gap: 30px;
-
+    @media screen and (min-device-width: 376px) and (max-device-width: 425px) { 
+        .container{
+            width:24rem
+        }
+        .container .img {
+            margin-left:2.5rem;
+        }
+    }
     .wrapper {
         box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1),
             -2px -2px 4px rgba(0, 0, 0, 0.1);
